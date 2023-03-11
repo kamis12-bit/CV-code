@@ -1,4 +1,4 @@
-This repository contains my solution to an assignment in the Individual Programming Project class.
+This folder contains my solution to an assignment in the Individual Programming Project class.
 
 The assignment: find the solution to a multi-dimensional labyrinth. 
 
