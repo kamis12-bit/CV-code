@@ -1,17 +1,19 @@
 #ifndef FIFO_QUEUE_H
 #define FIFO_QUEUE_H
 
+#include <inttypes.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
-// Cyclical implementation which uses an array and two distinguishable indices which 
+// Cyclical implementation which uses an array and two distinguishable indices
+// which
 //  identify which portion(s) of array form the queue
 typedef struct Fifo_queue {
     size_t head;
     size_t tail;
     size_t size_of_queue;
     uintmax_t *array;
-}* Queue_t;
-
+} *Queue_t;
 
 static inline bool queue_is_empty(Queue_t queue) {
     return queue->head == queue->tail;
